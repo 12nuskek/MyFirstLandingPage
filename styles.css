@@ -1,7 +1,8 @@
 /* styles.css */
 
-/* {
+* {
     border: 2px solid red;
+    font-family: 'Roboto', arial;
   }
 */
 
@@ -11,7 +12,7 @@ body {
   padding: 0;
   margin: 0;
   text-align: center;
-  font-family: 'Roboto', arial;
+
 }
 
 /*be flex, stack items on top of each oother  */
