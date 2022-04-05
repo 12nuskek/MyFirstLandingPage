@@ -4,63 +4,39 @@
     border: 2px solid red;
   }
 */
-  body {
-    width: 70%;
-    margin: 0 auto;
-  }
-.section1{
-    background-color: #1f2937;
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
 
-  }
+/* Makes the body of the page the full width and sets the background color to white and font */
+body {
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-family: 'Roboto', arial;
+}
 
-
-.container{
-  background-color: #1f2937;
-  padding: 16px;
-  gap: 8px;
+/*be flex, stack items on top of each oother  */
+.container {
   display: flex;
-  height: auto;
-  justify-content:space-between;
-  
+  flex-direction: column;
+  background-color: #1F2937;
+}
+/*Be flex, provide 20% margins on left and right, 2% above and below set color to white, aligns item to middle of page  */
+.navbar {
+  display: flex;
+  color: #F9FAF8;
+  padding: 2% 20% 2% 20%;
+  align-items: center;
 }
 
-.item {
-  height: auto;
-  flex: 1;
-  padding: 4px;
+/*be flex, create a margin inbetween logo and menu  */
+.Menu {
+  display: flex;
+  margin-left: auto;
 }
-
-.container .logo{
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    color: #f9faf8;
-    flex-basis: 100px;
-    flex-grow: 0;
-    flex-shrink: 0;
-  }
-
-  .container .menu{
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    color: #e5e7eb;
-    flex-basis: 100px;
-    flex-grow: 0;
-    flex-shrink: 0;
-    display: flex;
-    gap: 60px;
-  }
-
-  .mainContainer {
-    color: rgb(211, 12, 12);
-    margin-top: 20px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-  }
-
-
-   
+/*Treat A tag differently, remove underline, make white, change font size,add padding between each menu so they are space out better   */
+.Menu a {
+  text-decoration: none;
+  color: #E5E7EB;
+  font-size: 18px;
+  padding: 10px;
+}
