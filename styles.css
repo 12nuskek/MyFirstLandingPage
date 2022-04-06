@@ -27,6 +27,28 @@ body {
   background-color: #1F2937;
 }
 
+/*Be flex, provide 20% margins on left and right, 2% above and below set color to white, aligns item to middle of page  */
+.navbar {
+  display: flex;
+  color: #F9FAF8;
+  padding: .5% 20% 2% 20%;
+  align-items: center;
+}
+
+/*be flex, create a margin inbetween logo and menu  */
+.Menu {
+  display: flex;
+  margin-left: auto;
+}
+
+/*Treat A tag differently, remove underline, make white, change font size,add padding between each menu so they are space out better   */
+.Menu a {
+  text-decoration: none;
+  color: #E5E7EB;
+  font-size: 18px;
+  padding: 10px;
+}
+
 .container.section1 {
   display: flex;
   flex-direction: row;
@@ -36,23 +58,30 @@ body {
   color: #F9FAF8;
   padding: 2% 20% 10% 20%;
 }
-/*Be flex, provide 20% margins on left and right, 2% above and below set color to white, aligns item to middle of page  */
-.navbar {
+
+.container.section2 {
   display: flex;
-  color: #F9FAF8;
-  padding: 2% 20% 2% 20%;
+  flex-direction: column;
   align-items: center;
+  justify-content:space-between ;
+  text-align: left;
+  padding: 2% 20% 10% 20%;
+  background-color: white;
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: bolder;
 }
 
-/*be flex, create a margin inbetween logo and menu  */
-.Menu {
-  display: flex;
-  margin-left: auto;
+.squares-group{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
 }
-/*Treat A tag differently, remove underline, make white, change font size,add padding between each menu so they are space out better   */
-.Menu a {
-  text-decoration: none;
-  color: #E5E7EB;
-  font-size: 18px;
-  padding: 10px;
+
+.squares{
+display: flex;
+padding: 20px;
+border: 2px solid #3882f6;
+margin: 10px;
+border-radius: 5px;
 }
