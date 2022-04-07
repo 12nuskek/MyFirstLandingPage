@@ -10,7 +10,6 @@
     
   }
 
-
 /* Makes the body of the page the full width and sets the background color to white and font */
 body {
   background-color: #ffffff;
@@ -27,6 +26,8 @@ body {
   background-color: #1F2937;
 }
 
+
+
 /*Be flex, provide 20% margins on left and right, 2% above and below set color to white, aligns item to middle of page  */
 .navbar {
   display: flex;
@@ -36,21 +37,23 @@ body {
 }
 
 /*be flex, create a margin inbetween logo and menu  */
-.Menu {
+.navbar .Menu {
   display: flex;
   margin-left: auto;
 }
 
 /*Treat A tag differently, remove underline, make white, change font size,add padding between each menu so they are space out better   */
-.Menu a {
+.navbar  .Menu a {
   text-decoration: none;
   color: #E5E7EB;
   font-size: 18px;
   padding: 10px;
 }
 
+
+
+
 .container.section1 {
-  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content:space-between ;
@@ -58,9 +61,30 @@ body {
   color: #F9FAF8;
   padding: 2% 20% 10% 20%;
 }
+  .signup a{
+    text-decoration: none;
+    border-radius: 5px;
+    color: #E5E7EB;
+    font-size: 18px;
+    border: 2px solid  #3882f6;
+    background:  #3882f6;
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+  }
+  .item.image {
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: 18px;
+    padding: 15% 20% 15% 20%;
+    border: 2px solid gray;
+    background: gray;
+    text-align: center;
+  }
+
+
+
 
 .container.section2 {
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content:space-between ;
@@ -71,58 +95,86 @@ body {
   font-size: 36px;
   font-weight: bolder;
 }
-
-.container.section3 {
+  .squares-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .squares-block{
+    display: flex;
+    padding: 0px 50px 40px 50px;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .squares{
   display: flex;
+  padding: 40px 50px 40px 50px;
+  border: 2px solid #3882f6;
+  border-radius: 5px;
+  }
+  .squares-block .item{
+    font-size: 18px;
+  }
+
+
+
+  
+.container.section3 {
+    align-items: center;
+    background-color: #e5e7eb;
+    padding: 2% 20% 10% 20%;
+
+  }
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 20%;
+  align-items: end;
+}
+
+.quote h3{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.quote h1{
+  display: flex;
+
+}
+
+
+
+  
+.container.section4 {
   align-items: center;
-  background-color: #e5e7eb;
+  padding: 2% 20% 10% 20%;
+  background-color: white;
+
+}
+.cta{
+  display: flex;
+  border: 2px solid blue;
+  padding: 10% 40% 10% 40%;
+  align-content: center;
+  border-radius: 5px;
+  background-color: blue;
+  flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    color: #F9FAF8;
+    padding: 2% 20% 10% 20%;
+}
+.cta div{
+  display: flex;
+  border: 2px solid red;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  color: #F9FAF8;
   padding: 2% 20% 10% 20%;
 }
 
-.squares-group{
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-}
-
-.squares-block{
-  display: flex;
-  padding: 0px 50px 40px 50px;
-  border-radius: 5px;
-  flex-direction: column;
-  align-items: center;
-  }
-
-
-.squares{
-display: flex;
-padding: 40px 50px 40px 50px;
-border: 2px solid #3882f6;
-border-radius: 5px;
-flex-direction: column;
-}
-
-.squares-block .item{
-  font-size: 18px;
-  }
-
-  .item.image {
-    text-decoration: none;
-    color: #E5E7EB;
-    font-size: 18px;
-    padding: 125px 150px 125px 150px;
-    border: 2px solid gray;
-    background: gray;
-    text-align: center;
-  }
-
-.signup a{
-    text-decoration: none;
-    border-radius: 5px;
-    color: #E5E7EB;
-    font-size: 18px;
-    border: 2px solid  #3882f6;
-    background:  #3882f6;
-    text-align: center;
-    padding: 10px 15px 10px 15px;
-  }
