@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font: icon;
+  }
+
+.container{
+    display: flex;
+    padding: 2% 20% 2% 20%;
+}
+
+.menu{
+    justify-content: space-between;
+    background-color: darkkhaki;
+
+}
+
+.section1{
+    background-color:darkseagreen;
+
+}
